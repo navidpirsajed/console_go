@@ -74,16 +74,10 @@ Here is an example of a JSON configuration file (`config.json`):
   "enable_info": true,
   "enable_debug": true,
   "enable_error": true,
-  "enable_warn": true,
-  "output": "/path/to/log/file.log"
+  "enable_warn": true
 }
 ```
 
 In the configuration file:
 
 - `enable_log`, `enable_info`, `enable_debug`, `enable_error`, `enable_warn` are boolean flags to enable or disable respective log levels.
-- `output` is the file path where the logs will be written. If omitted, logs will be printed to the standard output.
-
-### Custom Output
-
-By default, logs are written to `os.Stdout`. You can change the output by calling `LoadConfig` and setting the `output` field.

@@ -32,12 +32,12 @@ type Logger interface {
 
 // Package-level logger settings structured as a singleton
 var loggerSettings = struct {
-	EnableLog   bool      `json:"enable_log"`
-	EnableInfo  bool      `json:"enable_info"`
-	EnableDebug bool      `json:"enable_debug"`
-	EnableError bool      `json:"enable_error"`
-	EnableWarn  bool      `json:"enable_warn"`
-	Output      io.Writer `json:"output"`
+	EnableLog   bool `json:"enable_log"`
+	EnableInfo  bool `json:"enable_info"`
+	EnableDebug bool `json:"enable_debug"`
+	EnableError bool `json:"enable_error"`
+	EnableWarn  bool `json:"enable_warn"`
+	Output      io.Writer
 }{
 	EnableLog:   true,
 	EnableInfo:  true,
