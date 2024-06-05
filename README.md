@@ -32,7 +32,7 @@ import (
 
 func main() {
 	console.Log("This is a log message")
-	console.Info("This is an info message")
+	console.Info("%d/%d/%d", 1,3,2024)
 	console.Debug("This is a debug message")
 	console.Error("This is an error message")
 	console.Warn("This is a warning message")
@@ -41,30 +41,7 @@ func main() {
 
 ### Configuration
 
-You can load configuration from a JSON file to set the logging preferences:
-
-```go
-package main
-
-import (
-	console "github.com/navidpirsajed/console_go"
-)
-
-func main() {
-	 console.LoadConfig("config.json");
-
-	console.Log("This is a log message")
-	console.Info("This is an info message")
-	console.Debug("This is a debug message")
-	console.Error("This is an error message")
-	console.Warn("This is a warning message")
-
-}
-```
-
-#### JSON Configuration File
-
-Here is an example of a JSON configuration file (`config.json`):
+You can load configuration from a JSON file to set the logging preferences. Here is an example of a `config.json`:
 
 ```json
 {
