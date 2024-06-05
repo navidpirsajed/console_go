@@ -27,15 +27,15 @@ Simply import the package and start logging:
 package main
 
 import (
-	"github.com/navidpirsajed/console_go"
+	console "github.com/navidpirsajed/console_go"
 )
 
 func main() {
-	console_go.Log("This is a log message")
-	console_go.Info("This is an info message")
-	console_go.Debug("This is a debug message")
-	console_go.Error("This is an error message")
-	console_go.Warn("This is a warning message")
+	console.Log("This is a log message")
+	console.Info("This is an info message")
+	console.Debug("This is a debug message")
+	console.Error("This is an error message")
+	console.Warn("This is a warning message")
 }
 ```
 
