@@ -54,7 +54,7 @@ func loadConfig() {
 	// fmt.Println("loading config.json file")
 	configFile, err := os.Open("config.json")
 	if err != nil {
-		fmt.Fprintln(os.Stderr, "Failed to open config file:", err)
+		// fmt.Fprintln(os.Stderr, "Failed to open config file:", err)
 		return
 	}
 	defer configFile.Close()
