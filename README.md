@@ -47,20 +47,18 @@ You can load configuration from a JSON file to set the logging preferences:
 package main
 
 import (
-	"github.com/navidpirsajed/console_go"
-	"log"
+	console "github.com/navidpirsajed/console_go"
 )
 
 func main() {
-	if err := console_go.LoadConfig("config.json"); err != nil {
-		log.Fatalf("Failed to load config: %v", err)
-	}
+	 console.LoadConfig("config.json");
 
-	console_go.Log("This is a log message")
-	console_go.Info("This is an info message")
-	console_go.Debug("This is a debug message")
-	console_go.Error("This is an error message")
-	console_go.Warn("This is a warning message")
+	console.Log("This is a log message")
+	console.Info("This is an info message")
+	console.Debug("This is a debug message")
+	console.Error("This is an error message")
+	console.Warn("This is a warning message")
+
 }
 ```
 
